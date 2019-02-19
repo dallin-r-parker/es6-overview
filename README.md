@@ -1,4 +1,4 @@
-# ES6 Syntax Overview & Helper methods
+# ES6 Syntax Overview & Array Helper Methods
 The purpose of this repo is to explain some of the most common uses for the syntax updates that happened when ES6 was released.
 It doesn't cover every detail or feature of ES6, but you can create a pull request if you want to add, correct, or find any errors.
 
