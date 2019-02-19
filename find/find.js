@@ -16,8 +16,8 @@ user;
 // NOTE: using the for loop keeps going through the array even when
 //it's found the specified criteria
 
-// Helper Method Substitute
-users.find(function(user) {
+// ====== ES6 way ==============================
+users.find((user) => {
   return user.name === 'Alex'
 })
 
@@ -33,7 +33,7 @@ var cars = [
   new Car('Focus')
 ]
 
-cars.find(function(car){
+cars.find((car) => {
   return car.model === 'Focus'
 })
 
@@ -46,8 +46,8 @@ var posts = [
 
 var comment = {  postId: 1, content: 'Great Post' }
 
-function postForComment(posts, comment){
-  return posts.find(function(post){
+const postForComment = (posts, comment) => {
+  return posts.find((post) => {
     return post.id === comment.postId;
   })
 }

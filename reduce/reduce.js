@@ -1,12 +1,11 @@
-// old way of doing things
-
-var numbers = [10,20,30,40,50];
+// ====== old way of doing things ==============
 var sum = 0;
 
 for (var i = 0; i < numbers.length; i++) {
   sum += numbers[i];
 }
 
+// ====== ES6 way ==============================
 numbers.reduce(function(sum, number) {
   return sum + number
 }, 0)
@@ -14,7 +13,7 @@ numbers.reduce(function(sum, number) {
 // NOTE: second argument ( 0 ) given to the reducer function is setting the
 // initial value that reduce will iterate from.
 
-// second example 
+// second example
 var primaryColors = [
   { color: 'red' },
   { color: 'yellow' },

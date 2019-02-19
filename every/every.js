@@ -18,8 +18,8 @@ for (var i = 0; i < computers.length; i++) {
   }
 }
 
-// Helper Method Substitute
-computers.every(function(computer) {
+// ====== ES6 way ==============================
+computers.every((computer) => {
   return computer.ram > 16;
 })
 
@@ -28,26 +28,23 @@ computers.every(function(computer) {
  // everything in the array has to fit the logic to come back 'true'
  // whereas the some operator is like saying 'or' || so at least one
 
- computers.some(function(computer) {
+ computers.some((computer) => {
    return computer.ram > 16;
  })
 
-
 // example
-
 var names = [
   'Dallin',
   'Parker',
   'Mikayda'
 ];
 
-names.every(function(name){
+names.every((name) => {
   return name.length > 4;
 })
 // False
 
-names.some(function(name){
+names.some((name) => {
   return name.length > 4
 })
-
 // True

@@ -1,16 +1,16 @@
-// this is the old way
+// ====== old way of doing things =============
 var colors = ['red', 'blue', 'green'];
 
 for (var i = 0; i < colors.length; i++) {
   console.log(colors[i]);
 }
-// Helper Method substitution
 
+// ====== ES6 way ==============================
 colors.forEach(function(color) {
   console.log(color);
 })
-// second example
 
+// second example
 //Create an array of numbers
 var numbers = [1,2,3,4,5]
 // Create a variable to hold the sum
@@ -30,11 +30,7 @@ var numbers = [1,2,3,4,5]
 
 var sum = 0
 
-function adder(number){
-  sum += number;
-}
+const adder = (number) => sum += number;
 
 numbers.forEach(adder);
 sum;
-
-// NOTE: You don't need to invoke the "adder" function as an argument

@@ -1,4 +1,4 @@
-// the old way
+// ====== The Old Way ==============================
 var expense = {
   type: 'Business',
   amount: '$45 USD'
@@ -7,7 +7,7 @@ var expense = {
 var type = expense.type;
 var amount = expense.amount;
 
-// ES6 way
+// ====== ES6 way ==============================
 
 const { type } = expense;
 const { amount } = expense;
@@ -20,7 +20,7 @@ amount;
 // NOTE: This is not create a new object, but rather declaring a new variable
 // that is referencing what is on the right side of the " = "
 
-// ES5 way
+// ====== The Old Way ==============================
 var savedFiled = {
   extension: 'jpg',
   name: 'repost',
@@ -33,7 +33,7 @@ function fileSummary(file){
 
 fileSummary(savedFiled)
 
-// ES6 WAY
+// ====== ES6 way ==============================
 function fileSummary({name, extension, size}) {
   return `The file ${name}.${extension} is of size ${size}`
 }
@@ -70,11 +70,11 @@ const companies = [
 ];
 
 // goal get location to Google
-//ES5
+// ====== The Old Way ==============================
  var gLocation = companies[0].location;
  gLocation;
 
- //ES6
+// ====== ES6 way ==============================
  const [{location}] = companies;
 location;
 

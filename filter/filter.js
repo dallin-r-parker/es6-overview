@@ -14,8 +14,8 @@ for (var i = 0; i < products.length; i++) {
   }
 }
 
-// Helper Method substitution
-products.filter(function(product) {
+// ====== ES6 way ==============================
+products.filter(product => {
   return product.type === 'hardware';
   //the boolean statement creates a truthy or falsy statement which it then returns
 });
@@ -34,7 +34,7 @@ var inventory = [
 
 // goal: Filter type is 'hardware', quantity is > 100, price is < 1400
 
-inventory.filter(function() {
+inventory.filter(() => {
   return inventory.type === 'hardware'
   && inventory.quantity > 100
   && inventory.price < 1400

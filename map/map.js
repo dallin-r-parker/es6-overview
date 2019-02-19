@@ -1,4 +1,4 @@
-// this is the old way
+// ====== old way of doing things ======
 var numbers = [1,2,3];
 var doubledNumbers = [];
 
@@ -13,11 +13,9 @@ doubledNumbers;
 // to avoid mutating the array "numbers"
 
 // Helper Method substitution
-var doubled = numbers.map(function(number){
-  return number * 2;
-});
+var doubled = numbers.map(number => number * 2);
 
-doubled;
+doubled();
 
 // Second example
 // goal is to find out ONLY the prices of the cars array
@@ -26,9 +24,5 @@ var cars = [
   { model: 'BMW', price: '$65,000' }
 ]
 
-var prices = cars.map(function(car) {
-  return car.price;
-});
-
-// NOTE: using dot notation we can access the specific value of the key we are
-// looking for.
+var prices = cars.map(car => car.price);
+prices();
